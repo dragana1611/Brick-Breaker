@@ -6,7 +6,7 @@ var y = Platno.height - 30;
 var dx = 2;
 var dy = -2;
 var visinaPrecage = 10;
-var sirinaPrecage = 75;
+var sirinaPrecage = 80;
 var precagaXpozicija = (Platno.width - sirinaPrecage) / 2;
 var idiDesno = false;
 var idiLevo = false;
@@ -150,10 +150,10 @@ function iscrtaj() {
     }
 
     if (idiDesno && precagaXpozicija < Platno.width - sirinaPrecage) {
-        precagaXpozicija += 7;
+        precagaXpozicija += 5;
     }
     else if (idiLevo && precagaXpozicija > 0) {
-        precagaXpozicija -= 7;
+        precagaXpozicija -= 5;
     }
 
     x += dx;
